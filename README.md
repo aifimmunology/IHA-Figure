@@ -1,7 +1,7 @@
 # Immune Health and Dynamic Project
 ![screenshot](Picture1.png)
 
-This repository contains notebooks and related analyses used for generating figures in our manuscript. The code is organized by figure and may change at any time during revisions.
+This repository contains notebooks and related analyses used for generating figures in our manuscript. The code is organized by figure we submitted (differnt from preprint version) and may change at any time during revisions.
 
 ## License
 
