@@ -1,0 +1,72 @@
+xpos,label,color
+1,SOX4+ naive CD4 T cell,#2B5777
+2,Core naive CD4 T cell,#597FC6
+3,ISG+ naive CD4 T cell,#072E77
+4,CM CD4 T cell,#6793A4
+5,GZMB- CD27+ EM CD4 T cell,#406B9C
+6,GZMB- CD27- EM CD4 T cell,#233C5B
+7,ISG+ memory CD4 T cell,#5480A3
+8,KLRF1- GZMB+ CD27- memory CD4 T cell,#628088
+9,Naive CD4 Treg,#8EB5D7
+10,Memory CD4 Treg,#001A9A
+11,KLRB1+ memory CD4 Treg,#3B76C1
+12,GZMK+ memory CD4 Treg,#A3B7C2
+13,Memory CD8 Treg,#C3D1DA
+14,KLRB1+ memory CD8 Treg,#C7E0C6
+15,DN T cell,#656E68
+16,Proliferating T cell,#AEAEB0
+17,SOX4+ naive CD8 T cell,#465F32
+18,Core naive CD8 T cell,#63A686
+19,ISG+ naive CD8 T cell,#869A94
+20,CM CD8 T cell,#6D9F5E
+21,GZMK+ CD27+ EM CD8 T cell,#95BDA1
+22,KLRF1- GZMB+ CD27- EM CD8 T cell,#59895F
+23,GZMK- CD27+ EM CD8 T cell,#314937
+24,KLRF1+ GZMB+ CD27- EM CD8 T cell,#4E695B
+25,ISG+ memory CD8 T cell,#94C0AD
+26,CD8aa,#7ECDAD
+27,SOX4+ Vd1 gdT,#B6D7C8
+28,Naive Vd1 gdT,#537E41
+29,KLRF1- effector Vd1 gdT,#A39E78
+30,KLRF1+ effector Vd1 gdT,#7CB38E
+31,GZMK+ Vd2 gdT,#72AF5A
+32,GZMB+ Vd2 gdT,#AECFB1
+33,CD8 MAIT,#1E8F64
+34,CD4 MAIT,#6F723F
+35,ISG+ MAIT,#BBB788
+36,Transitional B cell,#9C6469
+37,Core naive B cell,#D5ABAB
+38,ISG+ naive B cell,#D9A996
+39,Early memory B cell,#362027
+40,Core memory B cell,#B16B72
+41,Activated memory B cell,#60545A
+42,Type 2 polarized memory B cell,#4E2927
+43,CD95 memory B cell,#EBC3A7
+44,CD27+ effector B cell,#F4CEC3
+45,CD27- effector B cell,#A3787B
+46,Plasma cell,#784D47
+47,CD56bright NK cell,#FF7F55
+48,GZMK+ CD56dim NK cell,#A31001
+49,GZMK- CD56dim NK cell,#E16040
+50,Adaptive NK cell,#781B15
+51,ISG+ CD56dim NK cell,#EEA172
+52,Proliferating NK cell,#CC3B18
+53,Core CD14 monocyte,#F6831B
+54,ISG+ CD14 monocyte,#DE5A07
+55,IL1B+ CD14 monocyte,#BE4C26
+56,Intermediate monocyte,#B75228
+57,Core CD16 monocyte,#FCAF87
+58,ISG+ CD16 monocyte,#DB6A2E
+59,C1Q+ CD16 monocyte,#F4BA81
+60,CD14+ cDC2,#FEDC7A
+61,HLA-DRhi cDC2,#BE6E23
+62,ISG+ cDC2,#8C6527
+63,cDC1,#F8C755
+64,pDC,#FBB64E
+65,ASDC,#8A4E1C
+66,ILC,#F4AD3A
+67,CLP cell,#FCDB97
+68,CMP cell,#5B3006
+69,BaEoMaP cell,#3D1F15
+70,Platelet,#5B3930
+71,Erythrocyte,#1F1515
