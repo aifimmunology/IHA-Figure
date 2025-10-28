@@ -5,8 +5,6 @@
 - [Overview](#overview)
 - [Project Structure](#project-structure)
 - [Data Requirements](#data-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Analysis Workflow](#analysis-workflow)
 - [File Organization](#file-organization)
 - [Helper Functions](#helper-functions)
