@@ -168,7 +168,7 @@ This code is released AS IS without active support. While we welcome issues and 
 
 
 ### Citation
-If you use this code in your research, please cite our manuscript (citation details to be added upon publication).
+If you use this code/dataset in your research, please cite our manuscript (citation details to be added upon publication).
 
 ---
 
