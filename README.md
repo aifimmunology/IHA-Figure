@@ -43,14 +43,15 @@ Cursor_Test/
 ## 📊 Data Requirements
 
 ### Primary Datasets
-- **BRI Cohort**: Single-cell RNA-seq, flow cytometry, Olink proteomics
+- **BRI Cohort**: Single-cell RNA-seq, flow cytometry, Olink proteomics, HAI, total IgG assay
 - **SF4 Cohort**: Single-cell RNA-seq, flow cytometry, Olink proteomics
 
 ### External Validation Datasets
 - **OneK1K**: Population-scale scRNA-seq data
 - **Terekhova Dataset**: Independent aging study
 - **RA Dataset**: Rheumatoid arthritis cohort
-
+- **Tissue Aging Dataset**: Tissue aging dataset
+- 
 ### Data Formats
 - **scRNA-seq**: H5AD files with AnnData format
 - **Flow cytometry**: FCS files processed through standard gating
