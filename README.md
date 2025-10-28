@@ -118,21 +118,6 @@ Dataset/
 - `deseq2_analysis()`: DESeq2 differential expression wrapper
 - `clr_transform()`: Centered log-ratio transformation
 
-## 🌐 External Datasets
-
-### OneK1K Dataset
-- Population-scale scRNA-seq reference
-- Used for cell type validation
-- Located in `Figure2/04_Composite_Score/Onek1k_dataset_followup/`
-
-### Terekhova Dataset
-- Independent aging study
-- Located in `Figure2/04_Composite_Score/Terekhova_dataset_followup/`
-
-### RA Dataset
-- Rheumatoid arthritis cohort
-- Disease-specific validation
-- Located in `Figure2/04_Composite_Score/RA_dataset_followup/`
 
 ## 🎨 Visualization
 
