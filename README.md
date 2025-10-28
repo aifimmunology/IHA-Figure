@@ -160,7 +160,6 @@ The `AIFI_Reference.json` file defines a hierarchical cell type classification:
 - Pre/post vaccination comparisons
 - Vaccine-specific effects
 - Time course analysis
-- CMV status interactions
 
 ### 3. Multi-omics Integration
 - scRNA-seq + flow cytometry
