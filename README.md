@@ -99,7 +99,7 @@ Dataset/
 ├── FlowCyto/                   # Flow cytometry data
 ├── Olink/                      # Proteomics data
 ├── HAI/                        # Hemagglutination inhibition data
-└── MSD/                        # Meso Scale Discovery data
+└── MSD/                        # Meso Scale Discovery data for flu specific total IgG
 ```
 
 ## 🛠️ Helper Functions
