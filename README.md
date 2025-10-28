@@ -189,4 +189,4 @@ If you use this code in your research, please cite our manuscript (citation deta
 ---
 
 **Last updated**: Oct 2025  
-**Maintainer**: Allen Institute for Immunology  
+**Maintainer**: Qiuyu Gong
