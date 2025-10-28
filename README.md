@@ -17,7 +17,7 @@
 This project analyzes immune system changes during aging and vaccination responses using:
 
 - **Multi-omics data**: scRNA-seq, flow cytometry, Olink proteomics, total IgG, HAI assay
-- **Multiple cohorts**: BRI and SF4 cohorts with longitudinal sampling
+- **Multiple cohorts**: BRI s with longitudinal sampling and SF4 cohort
 - **Comprehensive cell typing**: 71 distinct immune cell types
 - **External validation**: OneK1K, Terekhova, AIFI RA, and Tissue Aging datasets
 - **Time series analysis**: Multiple timepoints (Y1D0, Y1D7, Y2D0, etc.)
