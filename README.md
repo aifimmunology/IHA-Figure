@@ -1,6 +1,4 @@
-# BRI Figures: Immune System Aging and Vaccination Response Analysis
 
-This repository contains the computational analysis code for generating figures in our manuscript on immune system aging and vaccination responses. The analysis integrates single-cell RNA sequencing (scRNA-seq), flow cytometry, and proteomics data across multiple cohorts and timepoints.
 
 ## 📋 Table of Contents
 
