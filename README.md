@@ -77,19 +77,10 @@ Cursor_Test/
 ## 📂 File Organization
 
 ### Main Figures (Figure1-5)
-Each figure directory contains:
-- **00_UMAP/**: Data assembly and visualization
-- **01_Olink/**: Proteomics analysis
-- **02_DEG/**: Differential expression analysis
-- **03_Frequency_Changes/**: Cell abundance analysis
-- **04_CompositeScore/**: Composite scoring
-- **05-DEG_Vax_and_NoVax/**: Vaccination-specific analysis
+
 
 ### Extended Figures (Extended_Figure1-9)
-Additional analysis components:
-- Extended timepoint analyses
-- Additional validation studies
-- Detailed statistical comparisons
+
 
 ### Dataset Structure
 ```
