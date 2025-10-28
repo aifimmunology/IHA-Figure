@@ -1,11 +1,195 @@
+# BRI Figures: Immune System Aging and Vaccination Response Analysis
 
-This repository contains notebooks and analyses used to generate the figures in our manuscript. The code is organized by the submitted figures (which may differ from the preprint version) and is subject to change during revisions.
+This repository contains the computational analysis code for generating figures in our manuscript on immune system aging and vaccination responses. The analysis integrates single-cell RNA sequencing (scRNA-seq), flow cytometry, and proteomics data across multiple cohorts and timepoints.
 
-## License
+## 📋 Table of Contents
 
-The license for this package is available on Github in the file LICENSE.txt in this repository.
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Data Requirements](#data-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Analysis Workflow](#analysis-workflow)
+- [File Organization](#file-organization)
+- [Helper Functions](#helper-functions)
+- [External Datasets](#external-datasets)
+- [License](#license)
+- [Support](#support)
+
+## 🔬 Overview
+
+This project analyzes immune system changes during aging and vaccination responses using:
+
+- **Multi-omics data**: scRNA-seq, flow cytometry, Olink proteomics
+- **Multiple cohorts**: BRI and SF4 cohorts with longitudinal sampling
+- **Comprehensive cell typing**: 71 distinct immune cell types
+- **External validation**: OneK1K, Terekhova, and RA datasets
+- **Time series analysis**: Multiple timepoints (Y1D0, Y1D7, Y2D0, etc.)
+
+## 📁 Project Structure
+
+```
+Cursor_Test/
+├── Celltype_Mapping/           # Cell type classification hierarchy
+├── Color_hex_codes/            # Standardized color schemes
+├── Conda_Environment/          # Python and R environment files
+├── Dataset/                    # Data storage and download scripts
+├── Demographics_table/         # Cohort demographic analysis
+├── Figure1-5/                  # Main manuscript figures
+├── Extended_Figure1-9/         # Extended analysis figures
+├── Supplementary_Figure1-2/    # Supplementary figures
+├── Supplementary_Table1/       # Supplementary tables
+├── helper_function/            # Reusable analysis functions
+├── README.md                   # This file
+└── LICENSE.txt                 # Allen Institute Software License
+```
+
+## 📊 Data Requirements
+
+### Primary Datasets
+- **BRI Cohort**: Single-cell RNA-seq, flow cytometry, Olink proteomics
+- **SF4 Cohort**: Single-cell RNA-seq, flow cytometry, Olink proteomics
+
+### External Validation Datasets
+- **OneK1K**: Population-scale scRNA-seq data
+- **Terekhova Dataset**: Independent aging study
+- **RA Dataset**: Rheumatoid arthritis cohort
+
+### Data Formats
+- **scRNA-seq**: H5AD files with AnnData format
+- **Flow cytometry**: FCS files processed through standard gating
+- **Proteomics**: Olink NPX values
+- **Metadata**: CSV files with sample annotations
 
 
-## Level of Support
 
-We are releasing this code to the community AS IS without active support. Feel free to submit issues, but please understand that an active response is not guaranteed.
+### Key Dependencies
+
+**Python:**
+- scanpy, pandas, numpy, matplotlib, seaborn
+- scikit-learn, scipy, statsmodels
+- celltypist, milopy, harmonypy
+
+**R:**
+- DESeq2, limma, edgeR
+- ggplot2, dplyr, tidyr
+- Seurat, SingleCellExperiment
+
+
+
+## 📂 File Organization
+
+### Main Figures (Figure1-5)
+Each figure directory contains:
+- **00_UMAP/**: Data assembly and visualization
+- **01_Olink/**: Proteomics analysis
+- **02_DEG/**: Differential expression analysis
+- **03_Frequency_Changes/**: Cell abundance analysis
+- **04_CompositeScore/**: Composite scoring
+- **05-DEG_Vax_and_NoVax/**: Vaccination-specific analysis
+
+### Extended Figures (Extended_Figure1-9)
+Additional analysis components:
+- Extended timepoint analyses
+- Additional validation studies
+- Detailed statistical comparisons
+
+### Dataset Structure
+```
+Dataset/
+├── scRNA/
+│   ├── BRI/                    # BRI cohort scRNA-seq data
+│   └── SF4/                    # SF4 cohort scRNA-seq data
+├── FlowCyto/                   # Flow cytometry data
+├── Olink/                      # Proteomics data
+├── HAI/                        # Hemagglutination inhibition data
+└── MSD/                        # Meso Scale Discovery data
+```
+
+## 🛠️ Helper Functions
+
+### Python Functions (`helper_function_IHA.py`)
+- `hex_to_rgb()`: Convert hex colors to RGB
+- `create_cmap_from_hex()`: Create custom colormaps
+- `plot_nhood_graph()`: Plot neighborhood graphs for spatial analysis
+- `grouped_obs_sum_raw()`: Aggregate raw counts by group
+- `grouped_obs_mean()`: Calculate mean expression by group
+
+### R Functions (`helper_function_IHA.r`)
+- `read_pseudobulk_expression()`: Parallel data reading
+- `filter_genes_and_celltype()`: Data filtering utilities
+- `deseq2_analysis()`: DESeq2 differential expression wrapper
+- `clr_transform()`: Centered log-ratio transformation
+
+## 🌐 External Datasets
+
+### OneK1K Dataset
+- Population-scale scRNA-seq reference
+- Used for cell type validation
+- Located in `Figure2/04_Composite_Score/Onek1k_dataset_followup/`
+
+### Terekhova Dataset
+- Independent aging study
+- Located in `Figure2/04_Composite_Score/Terekhova_dataset_followup/`
+
+### RA Dataset
+- Rheumatoid arthritis cohort
+- Disease-specific validation
+- Located in `Figure2/04_Composite_Score/RA_dataset_followup/`
+
+## 🎨 Visualization
+
+### Color Schemes
+Standardized color palettes are defined in `Color_hex_codes/`:
+- **Cell types**: 71 distinct colors for immune cell types
+- **Demographics**: Age groups, sex, CMV status
+- **Consistent theming**: Across all figures and analyses
+
+### Cell Type Hierarchy
+The `AIFI_Reference.json` file defines a hierarchical cell type classification:
+- **Major categories**: B cell, T cell, NK cell, Monocyte, DC, etc.
+- **Subcategories**: Memory, Naive, Effector subtypes
+- **Detailed annotations**: 71 specific cell type labels
+
+## 📈 Key Analyses
+
+### 1. Aging Analysis
+- Composite aging scores
+- Cell type frequency changes
+- Gene expression alterations
+- Cross-cohort validation
+
+### 2. Vaccination Response
+- Pre/post vaccination comparisons
+- Vaccine-specific effects
+- Time course analysis
+- CMV status interactions
+
+### 3. Multi-omics Integration
+- scRNA-seq + flow cytometry
+- scRNA-seq + proteomics
+- Cross-platform validation
+- Pathway analysis
+
+
+## 📄 License
+
+This project is licensed under the Allen Institute Software License - a 2-clause BSD license with additional restrictions on commercial use. See `LICENSE.txt` for details.
+
+**Key restrictions:**
+- Commercial use requires written permission from Allen Institute
+- Redistribution must include copyright notice
+- No warranty provided
+
+## 🤝 Support
+
+This code is released AS IS without active support. While we welcome issues and questions, please understand that active responses are not guaranteed.
+
+
+### Citation
+If you use this code in your research, please cite our manuscript (citation details to be added upon publication).
+
+---
+
+**Last updated**: Oct 2025  
+**Maintainer**: Allen Institute for Immunology  
