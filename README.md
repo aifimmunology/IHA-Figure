@@ -25,7 +25,6 @@ This project analyzes immune system changes during aging and vaccination respons
 ## 📁 Project Structure
 
 ```
-Cursor_Test/
 ├── Celltype_Mapping/           # Cell type classification hierarchy
 ├── Color_hex_codes/            # Standardized color schemes
 ├── Conda_Environment/          # Python and R environment files
