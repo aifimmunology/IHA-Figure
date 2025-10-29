@@ -48,7 +48,7 @@ This project analyzes immune system changes during aging and vaccination respons
 ### External Validation Datasets
 - **OneK1K**: Population-scale scRNA-seq data
 - **Terekhova Dataset**: Independent aging study
-- **RA Dataset**: Rheumatoid arthritis cohort
+- **RA Dataset**: Rheumatoid arthritis cohort in AIFI
 - **Tissue Aging Dataset**: Tissue aging dataset
   
 ### Data Formats
@@ -56,6 +56,8 @@ This project analyzes immune system changes during aging and vaccination respons
 - **Flow cytometry**: FCS files processed through standard gating
 - **Proteomics**: Olink NPX values
 - **Metadata**: CSV files with sample annotations
+- **Total IgG/HAI Assay**: CSV files
+
 
 
 
@@ -69,8 +71,6 @@ This project analyzes immune system changes during aging and vaccination respons
 **R:**
 - DESeq2, limma, edgeR
 - ggplot2, dplyr, tidyr
-- Seurat, SingleCellExperiment
-
 
 
 ## 📂 File Organization
@@ -90,7 +90,7 @@ Dataset/
 ├── FlowCyto/                   # Flow cytometry data
 ├── Olink/                      # Proteomics data
 ├── HAI/                        # Hemagglutination inhibition data
-└── MSD/                        # Meso Scale Discovery data for flu specific total IgG
+└── MSD/                        # Flu specific total IgG
 ```
 
 ## 🛠️ Helper Functions
