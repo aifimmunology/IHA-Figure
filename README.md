@@ -158,7 +158,9 @@ This code is released AS IS without active support. While we welcome issues and 
 
 
 ### Citation
-If you use this code/dataset in your research, please cite our manuscript (citation details to be added upon publication).
+If you use this code/dataset in your research, please cite our manuscript.
+
+Gong, Q., Sharma, M., Glass, M.C. et al. Multi-omic profiling reveals age-related immune dynamics in healthy adults. Nature (2025). https://doi.org/10.1038/s41586-025-09686-5
 
 ---
 
